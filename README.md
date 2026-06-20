@@ -93,38 +93,8 @@ Generated articles are automatically:
 
 ## 🏗 Architecture
 
-<p align="center">
-  <img src="architecture.png" width="300">
-</p>
+![Architecture](https://raw.githubusercontent.com/ved-2/Blog-writing-agent/main/images/Architecture.png)
 
-![Architecture](images/Architecture.png)
-
-```text
-START
-  │
-  ▼
-Router Agent
-  │
-  ├───────────────┐
-  │               │
-  ▼               ▼
-Research      Orchestrator
-  │               ▲
-  └───────────────┘
-          │
-          ▼
-      Fan-Out
-          │
- ┌────────┼────────┐
- ▼        ▼        ▼
-Worker  Worker  Worker
-  │        │        │
-  └────────┼────────┘
-           ▼
-        Reducer
-           ▼
-          END
-```
 
 ---
 
